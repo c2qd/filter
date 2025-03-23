@@ -1,8 +1,8 @@
 ! Title: YouTube's uBO filter to block annoying users' comments
-! Expires: 2 days
+! Expires: 6 hours
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250323.0
+! Version: 20250323.1
 
 ! ------Author Specification------
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ii5568"])
@@ -63,6 +63,14 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%97%E3%8
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@star_Aniota.1290"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@iiyagames"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%8D%E3%81%A4%E3%81%AD-f4f"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%A8%E3%83%9F%E3%83%AA%E3%82%A34"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Mariokart_Mania"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%A2%E3%82%B3%E3%82%BF%E3%81%A7%E3%81%99YO"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%F0%A0%94%81"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Rnn11"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Usachan_888"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@yukki2121"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%88%E3%83%A9%E3%83%B3%E3%83%97%E3%82%AD%E3%83%83%E3%83%89-s2e"])
 
 ! ------Content Specification------
 www.youtube.com##ytd-comment-view-model:has-text(この文字翻訳しないと)
