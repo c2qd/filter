@@ -2,7 +2,7 @@
 ! Expires: 12 hours
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250324.1
+! Version: 20250324.2
 
 ! ------Author Specification------
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ii5568"])
@@ -134,6 +134,8 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%AA%E3%8
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E7%85%89%E7%8D%84%E3%81%AF%E3%82%8B%E3%81%A8-f9e"])
 
 ! ------Content Specification------
+! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^example$/))------
+! ------If you don't use ^ and $, ytd-comment-view-model:has-text() works without any issues------
 www.youtube.com##ytd-comment-view-model:has-text(この文字翻訳しないと)
 www.youtube.com##ytd-comment-view-model:has-text(絶対に翻訳)
 www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^((で|だから)|(なに|何))?([\?？])?$/))
