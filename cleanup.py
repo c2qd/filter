@@ -7,14 +7,14 @@ def remove_duplicates_from_file(filename):
 
     with open(filename, 'w') as outfile:
         for line in lines:
-            stripped_line = line.strip()  # Remove leading/trailing whitespace for comparison
-            if not stripped_line:  # Skip empty lines
+            stripped_line = line.strip()
+            if not stripped_line:
                 outfile.write(line)
                 continue
             if stripped_line in seen:
                 print(f"Duplicate: {line.strip()}")
             else:
-                outfile.write(line)  # Write original line with its newline intact
+                outfile.write(line)
                 seen.add(stripped_line)
 
 if len(sys.argv) != 2:
