@@ -1,8 +1,8 @@
 ! Title: YouTube's uBO filter to block annoying users' comments
-! Expires: 12 hours
+! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250324.3
+! Version: 20250324.4
 
 ! ------Author Specification------
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ii5568"])
@@ -134,12 +134,31 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%AA%E3%8
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E7%85%89%E7%8D%84%E3%81%AF%E3%82%8B%E3%81%A8-f9e"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Soronmeeda_Japan"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@user-po2lg5vz5j"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@moving-cookjes"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%8C%97%E9%87%8E%E5%85%89%E6%AD%A3-f3q"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@rupas_god"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ruirui7351"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E9%9C%A7%E9%9B%A8%E9%AD%94%E7%90%86%E6%B2%99-k9j"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@bomdo"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E4%BD%90%E3%80%85%E6%9C%A8%E7%BE%8E%E6%99%BA%E5%AD%90-c5c"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%8B%E3%81%84%E3%81%8B%E3%81%84-b6n"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%B1%B1%E6%9C%AC%E4%BB%81%E6%84%9B-c8g"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@FU_Taitatu"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@user-kodokujanaigenta"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@apdpgjgm"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@araQunda"])
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^example$/))------
 ! ------If you don't use ^ and $, ytd-comment-view-model:has-text() works without any issues------
 www.youtube.com##ytd-comment-view-model:has-text(この文字翻訳しないと)
 www.youtube.com##ytd-comment-view-model:has-text(絶対に翻訳)
+www.youtube.com##ytd-comment-view-model:has-text(翻訳してみると)
+www.youtube.com##ytd-comment-view-model:has-text(じ、さつ)
+www.youtube.com##ytd-comment-view-model:has-text(う、せろ)
+www.youtube.com##ytd-comment-view-model:has-text(あなたの感想ですよね)
+www.youtube.com##ytd-comment-view-model:has-text(とうろ、くして)
+! ------Content Specification::RegEx rules------
 www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^((で|だから)|(なに|何))?([\?？])?$/))
 www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+万(円|えん)?(貰|もら)える/)
 www.youtube.com##ytd-comment-view-model:has-text(/ど\s?う\s?が\s?あ\s?る\s?よ\s?ん/)
@@ -147,3 +166,5 @@ www.youtube.com##ytd-comment-view-model:has-text(/((え|エ|ｴ|ぇ|ェ|ｪ)(つ
 www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^.$/))
 www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+(年|ねん).*(見|観|み)てる/)
 www.youtube.com##ytd-comment-view-model:has-text(/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u0900-\u097F\u0980-\u09FF\u0A00-\u0A7F\u0A80-\u0AFF\u0B00-\u0B7F\u0B80-\u0BFF\u0C00-\u0C7F\u0C80-\u0CFF\u0D00-\u0D7F\u0D80-\u0DFF\u0E00-\u0E7F\u0F00-\u0FFF]+/)
+www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^[\u3041-\u3096]{1}、[\u3041-\u3096]{2}$/))
+www.youtube.com##ytd-comment-view-model:has-text(/(はい)?(論破|ろんぱ)/)
