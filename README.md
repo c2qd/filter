@@ -1,5 +1,6 @@
 # filter
-All filters are tested with uBlock Origin in LibreWolf.
+All filters are tested with uBlock Origin in LibreWolf.  
+Primarily targeting Japanese-speaking users.
 ## YouTube's uBO filter to block annoying users' comments
 Subscribe:Add the following URL to the import field in uBlock Origin.
 ```
