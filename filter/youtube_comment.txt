@@ -2,23 +2,23 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250326.1
+! Version: 20250326.2
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^example$/))------
 ! ------If you don't use ^ and $, ytd-comment-view-model:has-text() works without any issues------
-www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/(.@.*)?(で|だから)(なに|何)?([\?？])$/))
-www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+万(円|えん)?(貰|もら)える/)
+www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/(.@.*)?(?:で|だから|なに|何)(?:なに|何)?[\?？]+$/))
+www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+万(?:円|えん)?(?:貰|もら)える/)
 www.youtube.com##ytd-comment-view-model:has-text(/ど\s?う\s?が\s?あ\s?る\s?よ\s?ん/)
-www.youtube.com##ytd-comment-view-model:has-text(/((え|エ|ｴ|ぇ|ェ|ｪ)(つ|っ|ッ|ｯ)(ち|チ|ﾁ|千)|叡(知|智))/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:(?:え|エ|ｴ|ぇ|ェ|ｪ)(?:つ|っ|ッ|ｯ)(?:ち|チ|ﾁ|千)|叡(?:知|智))/)
 www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^.$/))
-www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+(年|ねん).*(見|観|み)てる/)
+www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+(?:年|ねん).*(?:見|観|み)てる/)
 www.youtube.com##ytd-comment-view-model:has-text(/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFE\u0900-\u097F\u0980-\u09FF\u0A00-\u0A7F\u0A80-\u0AFF\u0B00-\u0B7F\u0B80-\u0BFF\u0C00-\u0C7F\u0C80-\u0CFF\u0D00-\u0D7F\u0D80-\u0DFF\u0E00-\u0E7F\u0F00-\u0FFF]+/)
 www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
-www.youtube.com##ytd-comment-view-model:has-text(/((はい)?(論破|ろんぱ)|あなたの感想ですよね)/)
-www.youtube.com##ytd-comment-view-model:has-text(/(この文字翻訳しないと|絶対に?翻訳|翻訳してみると)/)
-www.youtube.com##ytd-comment-view-model:has-text(/(じ、さつ|う、せろ|とうろ、くして)/)
-www.youtube.com##ytd-comment-view-model:has-text(/(市根|氏ね)/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:(はい)?(?:論破|ろんぱ)|あなたの感想ですよね)/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:この文字翻訳しないと|絶対に?翻訳|翻訳してみると)/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:じ[\s]*、*[\s]*さつ|う[\s]*、*[\s]*せろ|とうろ[\s]*、*[\s]*くして)/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:市根|氏ね)/)
 
 ! ------Author Specification------
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ii5568"])
@@ -181,3 +181,5 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@DRLL2.2.0"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@N-L325_%E5%8C%97"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@mwjdjtmg"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%85%AB%E6%9C%A8%E7%9C%9F%E7%94%B1%E7%BE%8E-q6v"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%82%8A%E3%82%93%E3%82%8A%E3%82%93%E3%81%94jh"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@sayun214"])
