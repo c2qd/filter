@@ -2,11 +2,11 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250326.4
+! Version: 20250326.5
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^example$/))------
-! ------If you don't use ^ and $, ytd-comment-view-model:has-text() works without any issues------
+! ------If ^ or $ are not used, ytd-comment-view-model:has-text() works without any issues------
 www.youtube.com##ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^(.@.*)?(?:で|だから|なに|何)(?:なに|何)?[\?？]+/))
 www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+万(?:円|えん)?(?:貰|もら)える/)
 www.youtube.com##ytd-comment-view-model:has-text(/ど[\s\u3000]*う[\s\u3000]*が[\s\u3000]*あ[\s\u3000]*る[\s\u3000]*よ[\s\u3000]*ん/)
@@ -201,3 +201,11 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%A4%A9%E7%B
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%81%E3%83%BC%E8%B1%9A%E6%92%B2%E6%BB%85"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@lucky-mad"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@LITE-g5k"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Kiyoone"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@alexandrebenois7962"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%9B%E3%81%84%E3%81%A1%E3%82%83%E3%82%93-u3t"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%8F%E3%82%89%E3%81%9F%E3%82%B5%E3%83%A6%E3%83%AA"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@t_t8463"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ay6478"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E6%8A%B9%E8%8C%B6%E3%83%A9%E3%83%86-z5y"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@intendimento"])
