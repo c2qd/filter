@@ -2,7 +2,7 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250326.5
+! Version: 20250327.0
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has(div > div > ytd-expander > div > yt-attributed-string > span:has-text(/^example$/))------
@@ -19,6 +19,7 @@ www.youtube.com##ytd-comment-view-model:has-text(/(?:(はい)?(?:論破|ろん�
 www.youtube.com##ytd-comment-view-model:has-text(/(?:この文字翻訳しないと|絶対に?翻訳|翻訳してみると|Don’t translate)/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:じ[\s\u3000]*、*[\s\u3000]*さつ|う[\s\u3000]*、*[\s\u3000]*せろ|とうろ[\s\u3000]*、*[\s\u3000]*くして)/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:市根|氏ね)/)
+www.youtube.com##ytd-comment-view-model:has-text(/ADHD/i)
 
 ! ------Author Specification------
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ii5568"])
@@ -209,3 +210,8 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@t_t8463"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ay6478"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E6%8A%B9%E8%8C%B6%E3%83%A9%E3%83%86-z5y"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@intendimento"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@nyolkici"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@tekuroom"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E6%A4%8D%E7%94%B0%E9%87%8D%E8%A1%8C"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@m-tic"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@vfefe"])
