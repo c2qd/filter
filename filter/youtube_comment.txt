@@ -2,7 +2,7 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250327.1
+! Version: 20250328.0
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has( span:has-text(/^example$/))------
@@ -21,7 +21,7 @@ www.youtube.com##ytd-comment-view-model:has-text(/(?:この文字翻訳しない
 www.youtube.com##ytd-comment-view-model:has-text(/(?:じ[\s\u3000]*、*[\s\u3000]*さつ|う[\s\u3000]*、*[\s\u3000]*せろ|とうろ[\s\u3000]*、*[\s\u3000]*くして)/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:市根|氏ね)/)
 www.youtube.com##ytd-comment-view-model:has-text(/ADHD/i)
-www.youtube.com##ytd-comment-view-model:has-text(/(?:~|～)[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*(?:~|～)/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:~|～)?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*(?:~|～)?/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:釣|つ)[\s\u3000]*り[\s\u3000]*(?:無|な)[\s\u3000]*し/)
 
 ! ------Author Specification------
@@ -238,3 +238,35 @@ www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@SuZu_JK"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%82%B0%E3%83%A9%E3%83%95420"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%A4%A7%E4%B9%85%E4%BF%9D%E9%81%A5%E8%BC%9D"])
 www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%9C%E5%8D%BF"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@laracroft1997"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%89%E3%82%B0%E3%83%9E%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%82%BA-y2f"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Discord_disco"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Mattaku3"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%83%91%E3%83%AB%E3%82%AD%E3%82%A2%E3%81%AF%E4%BF%BA%E3%81%AE%E7%9B%B8%E6%A3%92"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@saijakukunn1226"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E7%8B%AD%E5%B1%B1%E7%89%B9%E5%88%A5%E6%94%AF%E6%8F%B4%E5%AD%A6%E6%A0%A1"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%97%E3%82%87%E3%81%86%E3%81%8C%E3%82%84%E3%81%8D-b3b"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@mayumi7130"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@user-onigirisuki"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Sirakamirabu"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@khw-z2k"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@nyossuke314"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%A4%A9%E4%B8%8A%E5%A4%A9%E4%B8%8B%E5%94%AF%E6%88%91%E7%8B%AC%E5%B0%8A-h2z"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@SAENS%E4%B8%AD%E6%AF%92%E8%80%85"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Goneyanpokechannel"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%ED%95%9C%EA%B5%AD%ED%8C%90%EB%82%A8%EC%84%B1%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%84%88"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@karamel.himazin"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%82%B0%E3%83%9F%E3%82%B0%E3%83%9F%E3%82%B0%E3%83%9F-h4r"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%B8%9D%E5%9B%BD%E3%81%A7%E3%81%99"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@NERIKESHI-DAIMAOU"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Manuqtix.Manuqtix"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E5%85%A8%E6%A8%A9%E5%8A%9B%E3%82%92YouTube%E3%81%AB"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@SIRAME333"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@ree-hb3mw"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%82%86%E3%83%BC%E3%81%A819"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Alice%E3%81%A0%E3%81%8A"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@taiko-donda-"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@Asphalt_%E3%81%9F%E3%81%A0%E3%81%AE%E8%BB%8A%E5%A5%BD%E3%81%8D"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E9%AD%94%E3%83%B3%E3%82%B3%E3%82%AC%E3%82%B9TV.%E5%A5%B3%E6%80%A7%E6%B0%97"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@%E3%81%B2%E3%81%95%E3%81%93-g3z"])
+www.youtube.com##ytd-comment-view-model:has(a#author-text[href="/@budou_love"])
