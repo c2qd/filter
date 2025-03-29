@@ -8,6 +8,9 @@ def remove_duplicates_from_file(filename):
     with open(filename, 'w') as outfile:
         for line in lines:
             stripped_line = line.strip()
+            if stripped_line.startswith('!'):
+                outfile.write(line)
+                continue
             if not stripped_line:
                 outfile.write(line)
                 continue
