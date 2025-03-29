@@ -2,7 +2,7 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250329.5
+! Version: 20250330.0
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has( span:has-text(/^example$/))------
@@ -19,7 +19,7 @@ m.youtube.com##ytm-comment-renderer:has-text(/[\u0600-\u06FF\u0750-\u077F\u08A0-
 m.youtube.com##ytm-comment-renderer:has( span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
 m.youtube.com##ytm-comment-renderer:has-text(/(?:(はい)?(?:論破|ろんぱ)|あなたの感想ですよね)/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:この文字翻訳しないと|絶対に?翻訳|翻訳してみると|Don’t translate)/)
-m.youtube.com##ytm-comment-renderer:has-text(/(?:じ|う|とうろ|気|き|し|死|氏|市|黙|だま)[\s\u3000]*、*(?:さつ|札|せろ|くして|も|ね|寝|れ)/)
+m.youtube.com##ytm-comment-renderer:has( span:has-text(/(?:(じ[\s\u3000]*、*(?:さつ|札))|((?:う|失)[\s\u3000]*、*せろ)|((?:き|気)[\s\u3000]*、*も)|((?:し|死|氏|市)[\s\u3000]*、*(?:ね|寝))|((?:だま|黙)[\s\u3000]*、*れ))$/))
 m.youtube.com##ytm-comment-renderer:has-text(/(?:市根|氏ね)/)
 m.youtube.com##ytm-comment-renderer:has-text(/ADHD/i)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:~|～)?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*(?:~|～)?/)
@@ -39,7 +39,7 @@ www.youtube.com##ytd-comment-view-model:has-text(/[\u0600-\u06FF\u0750-\u077F\u0
 www.youtube.com##ytd-comment-view-model:has( span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
 www.youtube.com##ytd-comment-view-model:has-text(/(?:(はい)?(?:論破|ろんぱ)|あなたの感想ですよね)/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:この文字翻訳しないと|絶対に?翻訳|翻訳してみると|Don’t translate)/)
-www.youtube.com##ytd-comment-view-model:has-text(/(?:じ|う|とうろ|気|き|し|死|氏|市|黙|だま)[\s\u3000]*、*(?:さつ|札|せろ|くして|も|ね|寝|れ)/)
+www.youtube.com##ytd-comment-view-model:has( span:has-text(/(?:(じ[\s\u3000]*、*(?:さつ|札))|((?:う|失)[\s\u3000]*、*せろ)|((?:き|気)[\s\u3000]*、*も)|((?:し|死|氏|市)[\s\u3000]*、*(?:ね|寝))|((?:だま|黙)[\s\u3000]*、*れ))$/))
 www.youtube.com##ytd-comment-view-model:has-text(/(?:市根|氏ね)/)
 www.youtube.com##ytd-comment-view-model:has-text(/ADHD/i)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:~|～)?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*(?:~|～)?/)
