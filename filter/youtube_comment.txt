@@ -2,14 +2,14 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250329.3
+! Version: 20250329.4
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has( span:has-text(/^example$/))------
 ! ------Always put a single space between :has( and span------
 ! ------If ^ or $ are not used, ytd-comment-view-model:has-text() works without any issues------
 !#if env_mobile
-m.youtube.com##ytm-comment-renderer:has( span:has-text(/(.?@.*)?(?:で|だから|なに|何)(?:なに|何)?(?:？|\?|、)+$/))
+m.youtube.com##ytm-comment-renderer:has( span:has-text(/(.?@.*)?((?:で|だから|なに|何|は)(?:なに|何)?(?:？|\?|、)+)+$/))
 m.youtube.com##ytm-comment-renderer:has-text(/[0-9０-９]+万(?:円|えん)?(?:貰|もら)える/)
 m.youtube.com##ytm-comment-renderer:has-text(/ど[\s\u3000]*う[\s\u3000]*が[\s\u3000]*あ[\s\u3000]*る[\s\u3000]*よ[\s\u3000]*ん/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:(?:え|エ|ｴ|ぇ|ェ|ｪ)[\s\u3000]*(?:つ|っ|ッ|ｯ)[\s\u3000]*(?:ち|チ|ﾁ|千)|叡[\s\u3000]*(?:知|智))/)
@@ -19,18 +19,18 @@ m.youtube.com##ytm-comment-renderer:has-text(/[\u0600-\u06FF\u0750-\u077F\u08A0-
 m.youtube.com##ytm-comment-renderer:has( span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
 m.youtube.com##ytm-comment-renderer:has-text(/(?:(はい)?(?:論破|ろんぱ)|あなたの感想ですよね)/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:この文字翻訳しないと|絶対に?翻訳|翻訳してみると|Don’t translate)/)
-m.youtube.com##ytm-comment-renderer:has-text(/(?:じ[\s\u3000]*、*[\s\u3000]*(?:さつ|札)|う[\s\u3000]*、*[\s\u3000]*せろ|とうろ[\s\u3000]*、*[\s\u3000]*くして)/)
+m.youtube.com##ytm-comment-renderer:has-text(/(?:じ|う|とうろ|気|き|し|死|氏|市|黙|だま)[\s\u3000]*、*(?:さつ|札|せろ|くして|も|ね|寝|れ)/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:市根|氏ね)/)
 m.youtube.com##ytm-comment-renderer:has-text(/ADHD/i)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:~|～)?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*(?:~|～)?/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:釣|つ)[\s\u3000]*り[\s\u3000]*(?:無|な)[\s\u3000]*し/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:え|ぇ|エ|ｪ|ｴ|工)(?:ろ|ロ|ﾛ|口)(?:どう|動)(?:が|画)/)
 m.youtube.com##ytm-comment-renderer:has-text(ジゴクニオチロ)
-m.youtube.com##ytm-comment-renderer:has( span:has-text(/何様のつもり((なん)?ですか)?[\?？]/))
+m.youtube.com##ytm-comment-renderer:has( span:has-text(/何様(のつもり|((なん)?ですか))[\?？]/))
 m.youtube.com##ytm-comment-renderer:has-text(うおw)
 
 !#else
-www.youtube.com##ytd-comment-view-model:has( span:has-text(/(.?@.*)?(?:で|だから|なに|何)(?:なに|何)?(?:？|\?|、)+$/))
+www.youtube.com##ytd-comment-view-model:has( span:has-text(/(.?@.*)?((?:で|だから|なに|何|は)(?:なに|何)?(?:？|\?|、)+)+$/))
 www.youtube.com##ytd-comment-view-model:has-text(/[0-9０-９]+万(?:円|えん)?(?:貰|もら)える/)
 www.youtube.com##ytd-comment-view-model:has-text(/ど[\s\u3000]*う[\s\u3000]*が[\s\u3000]*あ[\s\u3000]*る[\s\u3000]*よ[\s\u3000]*ん/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:(?:え|エ|ｴ|ぇ|ェ|ｪ)[\s\u3000]*(?:つ|っ|ッ|ｯ)[\s\u3000]*(?:ち|チ|ﾁ|千)|叡[\s\u3000]*(?:知|智))/)
@@ -40,14 +40,14 @@ www.youtube.com##ytd-comment-view-model:has-text(/[\u0600-\u06FF\u0750-\u077F\u0
 www.youtube.com##ytd-comment-view-model:has( span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
 www.youtube.com##ytd-comment-view-model:has-text(/(?:(はい)?(?:論破|ろんぱ)|あなたの感想ですよね)/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:この文字翻訳しないと|絶対に?翻訳|翻訳してみると|Don’t translate)/)
-www.youtube.com##ytd-comment-view-model:has-text(/(?:じ[\s\u3000]*、*[\s\u3000]*(?:さつ|札)|う[\s\u3000]*、*[\s\u3000]*せろ|とうろ[\s\u3000]*、*[\s\u3000]*くして)/)
+www.youtube.com##ytd-comment-view-model:has-text(/(?:じ|う|とうろ|気|き|し|死|氏|市|黙|だま)[\s\u3000]*、*(?:さつ|札|せろ|くして|も|ね|寝|れ)/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:市根|氏ね)/)
 www.youtube.com##ytd-comment-view-model:has-text(/ADHD/i)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:~|～)?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*(?:~|～)?/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:釣|つ)[\s\u3000]*り[\s\u3000]*(?:無|な)[\s\u3000]*し/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:え|ぇ|エ|ｪ|ｴ|工)(?:ろ|ロ|ﾛ|口)(?:どう|動)(?:が|画)/)
 www.youtube.com##ytd-comment-view-model:has-text(ジゴクニオチロ)
-www.youtube.com##ytd-comment-view-model:has-text(/何様のつもり((なん)?ですか)?[\?？]/)
+www.youtube.com##ytd-comment-view-model:has-text(/何様(のつもり|((なん)?ですか))[\?？]/)
 www.youtube.com##ytd-comment-view-model:has-text(うおw)
 !#endif
 
@@ -347,6 +347,28 @@ m.youtube.com##ytm-comment-renderer:has(a[href="/@%E5%B7%9D%E5%8F%A3%E3%81%8B%E3
 m.youtube.com##ytm-comment-renderer:has(a[href="/@_.........................._"])
 m.youtube.com##ytm-comment-renderer:has(a[href="/@ch-rg8zi"])
 m.youtube.com##ytm-comment-renderer:has(a[href="/@%E6%80%AA%E7%9B%97%E3%82%AD%E3%83%83%E3%83%89-s2e"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@mae04-z8d"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@God-baby"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%83%8F%E3%83%88%E3%82%AD%E3%83%B3%E3%81%AE%E5%85%84"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@Aria%E3%81%AA"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E9%AD%94%E5%B9%BB%E3%81%AE%E8%B6%85%E8%B6%8A%E8%80%85"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E5%BB%A3%E7%94%B0%E7%BE%8E%E5%92%B2-j1q"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E7%86%8A%E6%9C%AC%E3%81%B2%E3%81%A8%E3%81%BF-e1u"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@Inoueisgoat"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@jmikdjse"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3tjtkdagjp10"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@hit2085-c3s%E5%85%AC%E5%BC%8F"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%83%92%E3%82%AB%E3%83%9E%E3%83%8B0707"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E9%AF%8B"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@takuya863"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%81%B7%E3%82%8A%E3%82%93%E3%81%AB%E3%81%8D"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E6%B0%8F%E5%8E%9F%E5%93%B2%E4%B9%9F-s9w"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@YH-h4h"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%82%B1%E3%83%B3%E3%82%BF%E3%81%AE%E3%81%8A%E3%81%98%E3%81%95%E3%82%932"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E6%A1%90%E4%B8%8B%E8%8F%9C%E6%9C%88%E3%81%8C%E9%85%8D%E4%BF%A1%E4%B8%AD"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E6%A0%97%E7%94%B0%E5%81%A5%E7%94%B7%E4%B8%AD%E5%B0%861889%E7%94%9F%E3%81%BE%E3%82%8C"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%83%97%E3%83%A9%E3%83%81%E3%83%8A%E3%83%87%E3%83%BC%E3%82%BF-k4e"])
+m.youtube.com##ytm-comment-renderer:has(a[href="/@SandyZhang-c8n"])
 
 !#else
 www.youtube.com##ytd-comment-view-model:has(a[href="/@ii5568"])
@@ -643,4 +665,26 @@ www.youtube.com##ytd-comment-view-model:has(a[href="/@%E5%B7%9D%E5%8F%A3%E3%81%8
 www.youtube.com##ytd-comment-view-model:has(a[href="/@_.........................._"])
 www.youtube.com##ytd-comment-view-model:has(a[href="/@ch-rg8zi"])
 www.youtube.com##ytd-comment-view-model:has(a[href="/@%E6%80%AA%E7%9B%97%E3%82%AD%E3%83%83%E3%83%89-s2e"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@mae04-z8d"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@God-baby"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%83%8F%E3%83%88%E3%82%AD%E3%83%B3%E3%81%AE%E5%85%84"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@Aria%E3%81%AA"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E9%AD%94%E5%B9%BB%E3%81%AE%E8%B6%85%E8%B6%8A%E8%80%85"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E5%BB%A3%E7%94%B0%E7%BE%8E%E5%92%B2-j1q"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E7%86%8A%E6%9C%AC%E3%81%B2%E3%81%A8%E3%81%BF-e1u"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@Inoueisgoat"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@jmikdjse"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3tjtkdagjp10"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@hit2085-c3s%E5%85%AC%E5%BC%8F"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%83%92%E3%82%AB%E3%83%9E%E3%83%8B0707"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E9%AF%8B"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@takuya863"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%81%B7%E3%82%8A%E3%82%93%E3%81%AB%E3%81%8D"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E6%B0%8F%E5%8E%9F%E5%93%B2%E4%B9%9F-s9w"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@YH-h4h"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%82%B1%E3%83%B3%E3%82%BF%E3%81%AE%E3%81%8A%E3%81%98%E3%81%95%E3%82%932"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E6%A1%90%E4%B8%8B%E8%8F%9C%E6%9C%88%E3%81%8C%E9%85%8D%E4%BF%A1%E4%B8%AD"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E6%A0%97%E7%94%B0%E5%81%A5%E7%94%B7%E4%B8%AD%E5%B0%861889%E7%94%9F%E3%81%BE%E3%82%8C"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%83%97%E3%83%A9%E3%83%81%E3%83%8A%E3%83%87%E3%83%BC%E3%82%BF-k4e"])
+www.youtube.com##ytd-comment-view-model:has(a[href="/@SandyZhang-c8n"])
 !#endif
