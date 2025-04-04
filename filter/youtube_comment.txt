@@ -2,18 +2,22 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250404.1
+! Version: 20250405.0
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has( span:has-text(/^example$/))------
-! ------Always put a single space between :has( and span------
-! ------If ^ or $ are not used, ytd-comment-view-model:has-text() works without any issues------
-! -----Mobile site------
+! ------      Always put a single space between :has( and span------
+! ------      If ^ or $ are not used, ytd-comment-view-model:has-text() works without any issues------
+! ------      If mobile, it is ytm-comment-renderer------
+! ------Note: When using :has(span:has-text()), be aware that the user ID is also a span element------
+! ------      Use :has( yt-attributed-string > span:has-text()) if necessary------
+
+! ------Mobile site------
 m.youtube.com##ytm-comment-renderer:has( span:has-text(/^(.?@.*)?((?:で|だから|なに|何|は|ん)(?:なに|何)?(?:？|\?|、)+)+$/))
 m.youtube.com##ytm-comment-renderer:has-text(/[\d０-９]+万(?:円|えん)?(?:貰|もら)える(?:ど(?:う|ー)|動)(?:が|画)/)
 m.youtube.com##ytm-comment-renderer:has-text(/ど[\s\u3000]*う[\s\u3000]*が[\s\u3000]*あ[\s\u3000]*る[\s\u3000]*よ[\s\u3000]*ん/)
 m.youtube.com##ytm-comment-renderer:has-text(/(?:(?:え|エ|ｴ|ぇ|ェ|ｪ)[\s\u3000]*(?:つ|っ|ッ|ｯ)[\s\u3000]*(?:ち|チ|ﾁ|千)|叡[\s\u3000]*(?:知|智))/)
-m.youtube.com##ytm-comment-renderer:has( span:has-text(/^.$/))
+m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^.$/)):not( yt-attributed-string > span:has-text(/^(?:草|w)$/))
 m.youtube.com##ytm-comment-renderer:has-text(/[\d０-９]{4}(?:年|ねん).*(?:見|観|み)てる/)
 m.youtube.com##ytm-comment-renderer:has-text(/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFE\u0900-\u097F\u0980-\u09FF\u0A00-\u0A7F\u0A80-\u0AFF\u0B00-\u0B7F\u0B80-\u0BFF\u0C00-\u0C7F\u0C80-\u0CFF\u0D00-\u0D7F\u0D80-\u0DFF\u0E00-\u0E7F\u0F00-\u0FFF]+/)
 m.youtube.com##ytm-comment-renderer:has( span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
@@ -37,7 +41,7 @@ www.youtube.com##ytd-comment-view-model:has( span:has-text(/^(.?@.*)?((?:で|だ
 www.youtube.com##ytd-comment-view-model:has-text(/[\d０-９]+万(?:円|えん)?(?:貰|もら)える(?:ど(?:う|ー)|動)(?:が|画)/)
 www.youtube.com##ytd-comment-view-model:has-text(/ど[\s\u3000]*う[\s\u3000]*が[\s\u3000]*あ[\s\u3000]*る[\s\u3000]*よ[\s\u3000]*ん/)
 www.youtube.com##ytd-comment-view-model:has-text(/(?:(?:え|エ|ｴ|ぇ|ェ|ｪ)[\s\u3000]*(?:つ|っ|ッ|ｯ)[\s\u3000]*(?:ち|チ|ﾁ|千)|叡[\s\u3000]*(?:知|智))/)
-www.youtube.com##ytd-comment-view-model:has( span:has-text(/^.$/))
+www.youtube.com##ytd-comment-view-model:has( yt-attributed-string > span:has-text(/^.$/)):not( yt-attributed-string > span:has-text(/^(?:草|w)$/))
 www.youtube.com##ytd-comment-view-model:has-text(/[\d０-９]{4}(?:年|ねん).*(?:見|観|み)てる/)
 www.youtube.com##ytd-comment-view-model:has-text(/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFE\u0900-\u097F\u0980-\u09FF\u0A00-\u0A7F\u0A80-\u0AFF\u0B00-\u0B7F\u0B80-\u0BFF\u0C00-\u0C7F\u0C80-\u0CFF\u0D00-\u0D7F\u0D80-\u0DFF\u0E00-\u0E7F\u0F00-\u0FFF]+/)
 www.youtube.com##ytd-comment-view-model:has( span:has-text(/^[\u3041-\u3096]、[\u3041-\u3096]{2}$/))
