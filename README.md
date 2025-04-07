@@ -16,7 +16,7 @@ Mirror: GitHub
 ```
 https://raw.githubusercontent.com/cc5efd7b0/filter/refs/heads/main/filter/youtube_comment.txt
 ```  
-If you want to use it on mobile, add this.
+If you want to use it on mobile, add this.  
 Main: Codeberg
 ```
 https://codeberg.org/cc5efd7b0/filter/raw/branch/main/filter/youtube_comment_mobile.txt
