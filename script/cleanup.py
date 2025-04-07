@@ -21,6 +21,6 @@ def remove_duplicates_from_file(filename):
                 seen.add(stripped_line)
 
 if len(sys.argv) != 2:
-    print("Usage: python script.py <filename>")
+    print("Usage: python script/cleanup.py <filename>")
 else:
     remove_duplicates_from_file(sys.argv[1])
