@@ -1,26 +1,24 @@
-import sys
-
-def remove_duplicates_from_file(filename):
+def remove_duplicates_from_file(filenames):
     seen = set()
-    with open(filename, 'r') as infile:
-        lines = infile.readlines()
+    for filename in filenames:
+        with open(filename, 'r') as infile:
+            lines = infile.readlines()
 
-    with open(filename, 'w') as outfile:
-        for line in lines:
-            stripped_line = line.strip()
-            if stripped_line.startswith('!'):
-                outfile.write(line)
-                continue
-            if not stripped_line:
-                outfile.write(line)
-                continue
-            if stripped_line in seen:
-                print(f"Duplicate: {line.strip()}")
-            else:
-                outfile.write(line)
-                seen.add(stripped_line)
+        with open(filename, 'w') as outfile:
+            for line in lines:
+                stripped_line = line.strip()
+                if stripped_line.startswith('!'):
+                    outfile.write(line)
+                    continue
+                if not stripped_line:
+                    outfile.write(line)
+                    continue
+                if stripped_line in seen:
+                    print(f"Duplicate in {filename}: {line.strip()}")
+                else:
+                    outfile.write(line)
+                    seen.add(stripped_line)
 
-if len(sys.argv) != 2:
-    print("Usage: python script/cleanup.py <filename>")
-else:
-    remove_duplicates_from_file(sys.argv[1])
+files = ['filter/youtube_comment.txt', 'filter/youtube_comment_mobile.txt']
+
+remove_duplicates_from_file(files)
