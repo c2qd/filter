@@ -7,11 +7,11 @@ def add_filter_line(arg):
 
     filter_format = {
         "m.youtube.com": [
-            "m.youtube.com##ytm-comment-thread-renderer:has(a[href=\"/{}\"])",
+            "m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href=\"/{}\"]))",
             "m.youtube.com##ytm-comment-renderer:has(a[href=\"/{}\"])"
         ],
         "www.youtube.com": [
-            "www.youtube.com##ytd-comment-thread-renderer:has(a[href=\"/{}\"])",
+            "www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href=\"/{}\"]))",
             "www.youtube.com##ytd-comment-view-model:has(a[href=\"/{}\"])"
         ]
     }
