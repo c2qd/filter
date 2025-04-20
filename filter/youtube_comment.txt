@@ -2,7 +2,7 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250419.2
+! Version: 20250420.0
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has( span:has-text(/^example$/))------
@@ -153,8 +153,8 @@ www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[
 www.youtube.com##ytd-comment-view-model:has(a[href="/@ae8788"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@nokonokonocco"]))
 www.youtube.com##ytd-comment-view-model:has(a[href="/@nokonokonocco"])
-www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B"]))
-www.youtube.com##ytd-comment-view-model:has(a[href="%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href*="%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B"]))
+www.youtube.com##ytd-comment-view-model:has(a[href*="%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BCKJ"]))
 www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BCKJ"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@CRYSTARCRYMACHINA"]))
@@ -891,3 +891,7 @@ www.youtube.com##ytd-comment-view-model:has(a[href="/@Rocmapping"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@Rocmapping"]))
 www.youtube.com##ytd-comment-view-model:has(a[href="/@%E5%86%8D%E7%94%9F%E3%83%AA%E3%82%B9%E3%83%88%E8%A6%8B%E3%82%8D%E3%82%BA%E3%83%A9"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@%E5%86%8D%E7%94%9F%E3%83%AA%E3%82%B9%E3%83%88%E8%A6%8B%E3%82%8D%E3%82%BA%E3%83%A9"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@arufarufamoyashi"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@arufarufamoyashi"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@sacluid"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@sacluid"]))
