@@ -2,7 +2,7 @@
 ! Expires: 1 day
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250420.0
+! Version: 20250422.0
 
 ! ------Content Specification------
 ! ------Note: When using ^ or $, the correct syntax is ytd-comment-view-model:has( span:has-text(/^example$/))------
@@ -895,3 +895,13 @@ www.youtube.com##ytd-comment-view-model:has(a[href="/@arufarufamoyashi"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@arufarufamoyashi"]))
 www.youtube.com##ytd-comment-view-model:has(a[href="/@sacluid"])
 www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@sacluid"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E3%81%A0%E3%81%91%E3%81%A7%E7%99%BB%E9%8C%B2%E8%80%8560%E4%BA%BA%E7%9B%AE%E6%A8%99"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@%E3%81%A0%E3%81%91%E3%81%A7%E7%99%BB%E9%8C%B2%E8%80%8560%E4%BA%BA%E7%9B%AE%E6%A8%99"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E4%BC%9D%E8%AA%AC%E3%81%AE%E5%8E%A8%E4%BA%8C%E7%97%85%E7%BF%94"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@%E4%BC%9D%E8%AA%AC%E3%81%AE%E5%8E%A8%E4%BA%8C%E7%97%85%E7%BF%94"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@sienkatudou_gnu"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@sienkatudou_gnu"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@%E6%B0%91%E6%AF%92%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@%E6%B0%91%E6%AF%92%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88"]))
+www.youtube.com##ytd-comment-view-model:has(a[href="/@tntn236"])
+www.youtube.com##ytd-comment-thread-renderer:has(> ytd-comment-view-model:has(a[href="/@tntn236"]))
