@@ -26,9 +26,10 @@ def add_filter_line(arg):
             added = False
             for i in range(len(lines) - 1, -1, -1):
                 if site_key in lines[i]:
-                    for format_line in formats:
+                    for format_line in reversed(formats):
                         filter_line = format_line.format(username)
                         lines.insert(i + 1, filter_line + "\n")
+
                     added = True
                     break
 
