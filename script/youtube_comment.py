@@ -29,7 +29,6 @@ def add_filter_line(arg):
                     for format_line in reversed(formats):
                         filter_line = format_line.format(username)
                         lines.insert(i + 1, filter_line + "\n")
-
                     added = True
                     break
 
