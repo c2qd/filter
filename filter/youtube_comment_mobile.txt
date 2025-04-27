@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250427.0
+! Version: 20250427.1
 
 ! ------Content Specification------
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^(.?@.*)?(?:(?:で|んで[えぇエェｪ]?|て|だから|なに|何|は|ん)[、。,.]*(?:な([、。,.]*)?に|何|(?:なん|何)(?:ですか|なの))?[？\?、]+)+$/)))
@@ -965,3 +965,9 @@ m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href
 m.youtube.com##ytm-comment-renderer:has(a[href="/@%E5%AE%AE%E7%94%B0%E5%8B%9D-y5e"])
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href="/@Sounyankjo"]))
 m.youtube.com##ytm-comment-renderer:has(a[href="/@Sounyankjo"])
+m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href="/@%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%81%BF%E3%82%8D-x3d"]))
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%81%BF%E3%82%8D-x3d"])
+m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href="/@%E6%97%A5%E6%9C%AC%E3%82%92%E7%89%9B%E8%80%B3%E3%82%8B%E7%9C%9F%E3%81%AE%E5%B8%9D%E7%8E%8B"]))
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E6%97%A5%E6%9C%AC%E3%82%92%E7%89%9B%E8%80%B3%E3%82%8B%E7%9C%9F%E3%81%AE%E5%B8%9D%E7%8E%8B"])
+m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href="/@%E7%B7%91%E6%9E%97%E6%AA%8E%E5%BA%83%E5%A0%B1%E6%8B%85%E5%BD%93"]))
+m.youtube.com##ytm-comment-renderer:has(a[href="/@%E7%B7%91%E6%9E%97%E6%AA%8E%E5%BA%83%E5%A0%B1%E6%8B%85%E5%BD%93"])
