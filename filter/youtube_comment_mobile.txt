@@ -1,8 +1,8 @@
 ! Title: YouTube annoying comments block for mobile
-! Expires: 1 day
+! Expires: 3 days
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250423.0
+! Version: 20250427.0
 
 ! ------Content Specification------
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^(.?@.*)?(?:(?:で|んで[えぇエェｪ]?|て|だから|なに|何|は|ん)[、。,.]*(?:な([、。,.]*)?に|何|(?:なん|何)(?:ですか|なの))?[？\?、]+)+$/)))
@@ -963,3 +963,5 @@ m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href
 m.youtube.com##ytm-comment-renderer:has(a[href="/@susu-em6bb"])
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href="/@%E5%AE%AE%E7%94%B0%E5%8B%9D-y5e"]))
 m.youtube.com##ytm-comment-renderer:has(a[href="/@%E5%AE%AE%E7%94%B0%E5%8B%9D-y5e"])
+m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has(a[href="/@Sounyankjo"]))
+m.youtube.com##ytm-comment-renderer:has(a[href="/@Sounyankjo"])
