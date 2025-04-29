@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://codeberg.org/cc5efd7b0/filter
 ! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
-! Version: 20250430.0
+! Version: 20250430.1
 
 ! ------Content Specification------
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^(.?@.*)?(?:(?:で|んで[えぇエェｪ]?|て|だから|なに|何|は|ん)[、。,.]*(?:な([、。,.]*)?に|何|(?:なん|何)(?:ですか|なの))?[？\?、]+)+$/)))
@@ -15,7 +15,7 @@ m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has-text(/
 m.youtube.com##ytm-comment-renderer:has-text(/(?:[えエｴぇェｪ][\s\u3000]*[つっッｯ][\s\u3000]*[ちチﾁ千]|叡[\s\u3000]*[知智])/)
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has-text(/[えエｴぇェｪ][ろロﾛ口](?:ど[うー]|動)[が画]/))
 m.youtube.com##ytm-comment-renderer:has-text(/[えエｴぇェｪ][ろロﾛ口](?:ど[うー]|動)[が画]/)
-m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^[^\d０-９]$/)):not( yt-attributed-string > span:has-text(/^(?:草|w)$/))
+m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^[^\d０-９]$/)):not( yt-attributed-string > span:has-text(/^(?:草|w)$/)))
 m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/^[^\d０-９]$/)):not( yt-attributed-string > span:has-text(/^(?:草|w)$/))
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[\d０-９]{4}(?:年|ねん).*[見観み]てる/)))
 m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[\d０-９]{4}(?:年|ねん).*[見観み]てる/))
@@ -43,7 +43,7 @@ m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-at
 m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[死氏市][\s\u3000]*[、。,.]*(?:根|寝|ね)$/))
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/(?:黙|だま)[\s\u3000]*[、。,.]*れ$/)))
 m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/(?:黙|だま)[\s\u3000]*[、。,.]*れ$/))
-m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[せセｾ][\s\u3000]*[、。,.]*[つっツﾂ][\s\u3000]*[、。,.]*[くクｸ][\s\u3000]*[、。,.]*[すスｽ]/))
+m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[せセｾ][\s\u3000]*[、。,.]*[つっツﾂ][\s\u3000]*[、。,.]*[くクｸ][\s\u3000]*[、。,.]*[すスｽ]/)))
 m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[せセｾ][\s\u3000]*[、。,.]*[つっツﾂ][\s\u3000]*[、。,.]*[くクｸ][\s\u3000]*[、。,.]*[すスｽ]/))
 m.youtube.com##ytm-comment-thread-renderer:has(> ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[~～]?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*[~～]?/)))
 m.youtube.com##ytm-comment-renderer:has( yt-attributed-string > span:has-text(/[~～]?[\s\u3000]*は[\s\u3000]*い[\s\u3000]*注[\s\u3000]*目[\s\u3000]*[~～]?/))
