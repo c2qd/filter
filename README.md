@@ -14,7 +14,7 @@ https://codeberg.org/cc5efd7b0/filter/raw/branch/main/filter/youtube_comment.txt
 ```
 Mirror: GitHub
 ```
-https://raw.githubusercontent.com/cc5efd7b0/filter/refs/heads/main/filter/youtube_comment.txt
+https://raw.githubusercontent.com/c2qd/filter/refs/heads/main/filter/youtube_comment.txt
 ```  
 If you want to use it on mobile, add this.  
 Main: Codeberg
@@ -23,7 +23,7 @@ https://codeberg.org/cc5efd7b0/filter/raw/branch/main/filter/youtube_comment_mob
 ```
 Mirror: GitHub
 ```
-https://raw.githubusercontent.com/cc5efd7b0/filter/refs/heads/main/filter/youtube_comment_mobile.txt
+https://raw.githubusercontent.com/c2qd/filter/refs/heads/main/filter/youtube_comment_mobile.txt
 ```  
 ## License
 [The Unlicense](LICENSE)
