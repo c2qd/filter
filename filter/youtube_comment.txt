@@ -1,7 +1,7 @@
 ! Title: YouTube annoying comments block
 ! Expires: 3 days
-! Homepage: https://codeberg.org/cc5efd7b0/filter
-! License: https://codeberg.org/cc5efd7b0/filter/src/branch/main/LICENSE
+! Homepage: https://codeberg.org/c2qd/filter
+! License: https://codeberg.org/c2qd/filter/src/branch/main/LICENSE
 ! Version: 20250430.0
 
 ! ------Content Specification------

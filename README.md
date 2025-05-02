@@ -10,7 +10,7 @@ Additionally, it handles comments from users not on the block list by using a ge
 To use this filter, add the following URL to the import field in uBlock Origin.  
 Main: Codeberg
 ```
-https://codeberg.org/cc5efd7b0/filter/raw/branch/main/filter/youtube_comment.txt
+https://codeberg.org/c2qd/filter/raw/branch/main/filter/youtube_comment.txt
 ```
 Mirror: GitHub
 ```
@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/c2qd/filter/refs/heads/main/filter/youtube_com
 If you want to use it on mobile, add this.  
 Main: Codeberg
 ```
-https://codeberg.org/cc5efd7b0/filter/raw/branch/main/filter/youtube_comment_mobile.txt
+https://codeberg.org/c2qd/filter/raw/branch/main/filter/youtube_comment_mobile.txt
 ```
 Mirror: GitHub
 ```
